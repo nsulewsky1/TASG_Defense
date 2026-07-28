@@ -1,0 +1,58 @@
+TASG DEFENSE WEBSITE — PRE-DEPLOYMENT QA/QC REPORT
+Build: 2026-07-28-v4.2-QA
+
+SCOPE TESTED
+- index.html
+- snare-1a.html
+- about.html
+- partner.html
+- privacy.html
+- game.html
+- 404.html
+- CSS, JavaScript, logo, icons, social card, topography SVG
+- Cloudflare Pages support files and GitHub root structure
+
+VALIDATION COMPLETED
+1. ZIP archive integrity: PASS
+2. JavaScript syntax: PASS
+3. HTML parsing, unique element IDs, one H1 per page: PASS
+4. Internal links and asset references: PASS
+5. Logo load and aspect ratio: PASS
+6. Topography SVG load and animation: PASS
+7. Browser console and page errors: PASS
+8. Desktop rendering: PASS
+9. Mobile rendering: PASS
+10. Responsive widths tested: 320, 360, 390, 768, 1024, 1280, and 1440 pixels
+11. Horizontal overflow at all tested widths: PASS
+12. Mobile navigation open, close, and Escape-key behavior: PASS
+13. Partner form validity and encoded mailto generation: PASS
+14. Game start, pause, reset, desktop pointer controls, mobile touch controls: PASS
+15. Game collision/scoring test: PASS (deterministic QA run produced score 36)
+16. Game local-storage unavailable fallback: PASS
+17. Manifest and sitemap parsing: PASS
+18. Reduced-motion accessibility support: PASS
+
+DEFECTS FOUND AND CORRECTED
+- Corrected low text contrast in the light partner-fit section.
+- Removed the ambiguous tan device silhouette from SNARE-1A visuals.
+- Added safe game behavior when localStorage is restricted or unavailable.
+- Corrected horizontal overflow on 320-pixel mobile screens caused by long footer/email content.
+- Added overflow-safe email wrapping.
+- Added reduced-motion behavior for animated topography.
+- Removed duplicate homepage entry from the sitemap.
+
+DEPLOYMENT LIMITATION
+This is a pre-deployment local browser and static-package validation. DNS, Cloudflare production-branch selection, cache behavior, and response-header delivery must be verified after the files are committed and Cloudflare reports a successful production deployment.
+
+CLOUDFLARE ROUTING VERIFICATION (v4.3)
+- Converted all internal navigation to extensionless Cloudflare Pages routes.
+- Removed unnecessary _redirects rules to eliminate rewrite ambiguity.
+- Removed repository CNAME file because Cloudflare Pages custom domains are configured in the Cloudflare dashboard.
+- Canonical, Open Graph, sitemap, and manifest URLs updated to final extensionless routes.
+
+Visual QA v4.4 additions:
+- Clean 950x325 TASG wordmark from the original 2508x627 source banner.
+- WebP primary + PNG fallback on every page.
+- Dedicated centered sword icons at 512, 192, 180, and 32 pixels.
+- SVG topography animation on homepage, tactical boards, interior heroes, game frame, privacy, and 404 routes.
+- Reduced-motion preference remains honored.

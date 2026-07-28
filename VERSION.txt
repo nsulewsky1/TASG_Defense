@@ -1,0 +1,4 @@
+TASG website build: 2026-07-28-v4.4-Visual-QA
+Expected homepage title: TASG — Operator-Led Defense Innovation
+Expected homepage headline: Building the final layer of soldier survivability.
+Visual QA: clean high-resolution TASG wordmark and animated topography across homepage and interior page heroes.
