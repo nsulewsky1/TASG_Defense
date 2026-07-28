@@ -1,0 +1,13 @@
+TASG DEFENSE DEPLOYMENT CHECKLIST
+
+1. Upload the FILES INSIDE this package to the repository publishing root.
+2. index.html must be visible in the same GitHub folder as CNAME and tasg-site-v2.css.
+3. Do not upload an enclosing TASG_Defense-deploy-root folder into the repository.
+4. Preserve the production branch selected in Cloudflare Pages (normally main).
+5. Cloudflare Pages settings for this static site:
+   Framework preset: None
+   Build command: leave blank
+   Build output directory: leave blank or use /
+   Root directory: leave blank
+6. Confirm the latest Cloudflare deployment shows the same commit you uploaded.
+7. Verify https://tasgdefense.com/VERSION.txt after deployment.

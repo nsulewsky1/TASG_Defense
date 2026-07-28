@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tasgdefense.com/sitemap.xml
