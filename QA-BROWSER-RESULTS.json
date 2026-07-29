@@ -1,0 +1,141 @@
+{
+  "results": [
+    {
+      "name": "Homepage title",
+      "pass": true,
+      "detail": "TASG \u2014 Operator-Led Defense Innovation"
+    },
+    {
+      "name": "Wordmark loaded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Preview loaded",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Home overflow",
+      "pass": true,
+      "detail": "[1440, 1440]"
+    },
+    {
+      "name": "Concept canvas drawn",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Default radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No fictional app",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "App overflow",
+      "pass": true,
+      "detail": "[1260, 1260]"
+    },
+    {
+      "name": "Range adjust",
+      "pass": true,
+      "detail": "12 m"
+    },
+    {
+      "name": "Add threat",
+      "pass": true,
+      "detail": "FPV-06"
+    },
+    {
+      "name": "Drag marker",
+      "pass": true,
+      "detail": "KHARG E4906 N5184->KHARG E6029 N5539"
+    },
+    {
+      "name": "Distance tool",
+      "pass": true,
+      "detail": "198.6 m / 338\u00b0"
+    },
+    {
+      "name": "CAS final heading",
+      "pass": true,
+      "detail": "emain clear of friendly ground elements. Demonstration data only. Not for operational use.\nFINAL ATTACK HEADING: 160\u2013210"
+    },
+    {
+      "name": "Copy status",
+      "pass": true,
+      "detail": "Message copied."
+    },
+    {
+      "name": "Reset radius",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Reset output",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Iframe resize",
+      "pass": true,
+      "detail": "1339.81px"
+    },
+    {
+      "name": "Veteran owned",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Nick name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No fictional site",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Partner valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Game canvas",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Game starts",
+      "pass": true,
+      "detail": "Engaged"
+    },
+    {
+      "name": "Mobile parent overflow",
+      "pass": true,
+      "detail": "[390, 390]"
+    },
+    {
+      "name": "Mobile menu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile app overflow",
+      "pass": true,
+      "detail": "[362, 362]"
+    },
+    {
+      "name": "Mobile map visible",
+      "pass": true,
+      "detail": "{'x': 23, 'y': 2620.578125, 'width': 573.328125, 'height': 430}"
+    }
+  ],
+  "failures": [],
+  "console": []
+}
