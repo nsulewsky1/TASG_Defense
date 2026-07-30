@@ -1,0 +1,41 @@
+TASG v4.7 Lean Responsive QA Report
+Build: 2026-07-30-v4.7-Lean-Responsive-QA
+
+CONTENT AND POSITIONING
+PASS - Primary navigation reduced to SNARE-1A, About, and Partner.
+PASS - SNARE Training Game removed from primary navigation and retained in the footer.
+PASS - Interactive tactical concept, Kharg imagery, CAS, MEDEVAC, and map-reporting content removed.
+PASS - SNARE-1A expanded as Soldier-Worn Net Aerial Response Equipment.
+PASS - Current maturity identified as company-assessed TRL 2.
+PASS - TRL 3 proof-of-concept objective clearly separated from current maturity.
+PASS - About page uses “Operator-led and combat-experienced.”
+PASS - Founder name displayed as Nick Sulewsky.
+PASS - No public claim of SBA VetCert status and no SBA seal included.
+PASS - No command endorsement, unit identification, rank, official military seal, or legal-review claim published.
+
+STATIC VALIDATION
+PASS - JavaScript syntax validated with Node.js.
+PASS - Seven HTML pages parsed with no duplicate element IDs.
+PASS - All internal HTML, CSS, JavaScript, image, icon, manifest, and sitemap references resolve locally.
+PASS - No assets folder required.
+PASS - Removed obsolete interactive-demo files and obsolete cache rules.
+PASS - Package contains 26 root files and is under 1 MB.
+
+BROWSER AND RESPONSIVE QA
+Browser engine: Chromium, using an isolated local rendering harness with production CSS and JavaScript.
+Viewports: 375x812, 430x932, 768x1024, 1366x768, and 1440x1000.
+Pages: Home, SNARE-1A, About, Partner, Privacy, and Training Game.
+
+PASS - 30 page/viewport rendering checks.
+PASS - Full company name visible in the header in all 30 checks.
+PASS - Header mark loaded in all 30 checks.
+PASS - No horizontal overflow in all 30 checks.
+PASS - Mobile menu opens correctly at phone, large-phone, and tablet widths.
+PASS - Partner form rejects incomplete input and validates after required fields are filled.
+PASS - Training game initializes and changes from Ready to Engaged.
+PASS - No browser console or runtime errors.
+
+LIMITATIONS
+- Production Cloudflare branch, routing, caching, and custom-domain behavior require verification after deployment.
+- Browser rendering was executed in Chromium. The site uses standards-based HTML/CSS/JavaScript designed for current Chrome, Edge, Firefox, and Safari, but native Safari and Firefox were not available in this QA environment.
+- This package does not constitute a legal or ethics compliance determination. Final public-release decisions remain subject to the user’s servicing ethics/legal guidance.

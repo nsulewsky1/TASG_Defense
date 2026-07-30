@@ -1,0 +1,11 @@
+TASG website build: 2026-07-30-v4.7-Lean-Responsive-QA
+
+Primary changes:
+- Mobile header always displays Terminal Applied Solutions Group
+- Interactive tactical concept removed
+- Simulator removed from primary navigation and retained in footer
+- SNARE acronym and company-assessed TRL 2 posture clarified
+- About page uses Operator-led and combat-experienced positioning
+- Founder bio shortened and separated from official duties
+- SBA VetCert icon intentionally withheld pending approval
+- Responsive layouts optimized for phone, tablet, Windows, and macOS browsers

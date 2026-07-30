@@ -1,0 +1,344 @@
+[
+  {
+    "viewport": "phone",
+    "route": "/",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "TASG \u2014 Operator-Led Defense Innovation",
+    "errors": []
+  },
+  {
+    "viewport": "phone",
+    "route": "/snare-1a",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "SNARE-1A \u2014 Public Capability Profile | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "phone",
+    "route": "/about",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "About TASG \u2014 Operator-Led and Combat-Experienced",
+    "errors": []
+  },
+  {
+    "viewport": "phone",
+    "route": "/partner",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "Partner with TASG",
+    "errors": []
+  },
+  {
+    "viewport": "phone",
+    "route": "/privacy",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "Privacy | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "phone",
+    "route": "/game",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "SNARE Drone Intercept Game | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "phone",
+    "route": "mobile-menu",
+    "pass": true,
+    "errors": []
+  },
+  {
+    "viewport": "large-phone",
+    "route": "/",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "TASG \u2014 Operator-Led Defense Innovation",
+    "errors": []
+  },
+  {
+    "viewport": "large-phone",
+    "route": "/snare-1a",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "SNARE-1A \u2014 Public Capability Profile | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "large-phone",
+    "route": "/about",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "About TASG \u2014 Operator-Led and Combat-Experienced",
+    "errors": []
+  },
+  {
+    "viewport": "large-phone",
+    "route": "/partner",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "Partner with TASG",
+    "errors": []
+  },
+  {
+    "viewport": "large-phone",
+    "route": "/privacy",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "Privacy | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "large-phone",
+    "route": "/game",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "SNARE Drone Intercept Game | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "large-phone",
+    "route": "mobile-menu",
+    "pass": true,
+    "errors": []
+  },
+  {
+    "viewport": "tablet",
+    "route": "/",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "TASG \u2014 Operator-Led Defense Innovation",
+    "errors": []
+  },
+  {
+    "viewport": "tablet",
+    "route": "/snare-1a",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "SNARE-1A \u2014 Public Capability Profile | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "tablet",
+    "route": "/about",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "About TASG \u2014 Operator-Led and Combat-Experienced",
+    "errors": []
+  },
+  {
+    "viewport": "tablet",
+    "route": "/partner",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "Partner with TASG",
+    "errors": []
+  },
+  {
+    "viewport": "tablet",
+    "route": "/privacy",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "Privacy | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "tablet",
+    "route": "/game",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "SNARE Drone Intercept Game | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "tablet",
+    "route": "mobile-menu",
+    "pass": true,
+    "errors": []
+  },
+  {
+    "viewport": "laptop",
+    "route": "/",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "TASG \u2014 Operator-Led Defense Innovation",
+    "errors": []
+  },
+  {
+    "viewport": "laptop",
+    "route": "/snare-1a",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "SNARE-1A \u2014 Public Capability Profile | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "laptop",
+    "route": "/about",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "About TASG \u2014 Operator-Led and Combat-Experienced",
+    "errors": []
+  },
+  {
+    "viewport": "laptop",
+    "route": "/partner",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "Partner with TASG",
+    "errors": []
+  },
+  {
+    "viewport": "laptop",
+    "route": "/privacy",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "Privacy | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "laptop",
+    "route": "/game",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "SNARE Drone Intercept Game | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "desktop",
+    "route": "/",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "TASG \u2014 Operator-Led Defense Innovation",
+    "errors": []
+  },
+  {
+    "viewport": "desktop",
+    "route": "/snare-1a",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "SNARE-1A \u2014 Public Capability Profile | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "desktop",
+    "route": "/about",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "About TASG \u2014 Operator-Led and Combat-Experienced",
+    "errors": []
+  },
+  {
+    "viewport": "desktop",
+    "route": "/partner",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "Partner with TASG",
+    "errors": []
+  },
+  {
+    "viewport": "desktop",
+    "route": "/privacy",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "Privacy | TASG",
+    "errors": []
+  },
+  {
+    "viewport": "desktop",
+    "route": "/game",
+    "overflow": false,
+    "brand_visible": true,
+    "brand": "Terminal Applied Solutions Group",
+    "logo_ok": true,
+    "title": "SNARE Drone Intercept Game | TASG",
+    "errors": []
+  },
+  {
+    "check": "nav",
+    "header_links": [
+      "SNARE-1A",
+      "About",
+      "Partner"
+    ],
+    "footer_game": 1,
+    "interactive_absent": true,
+    "errors": []
+  },
+  {
+    "check": "partner-form",
+    "initial_invalid": true,
+    "valid_after_fill": true,
+    "errors": []
+  },
+  {
+    "check": "game",
+    "initial": "Ready",
+    "after_start": "Engaged",
+    "canvas": 1,
+    "errors": []
+  }
+]

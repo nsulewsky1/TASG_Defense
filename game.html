@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Play TASG’s optional browser-based SNARE drone intercept training game." />
+  <meta name="theme-color" content="#070a0d" />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="canonical" href="https://tasgdefense.com/game" />
+  <meta property="og:title" content="SNARE Drone Intercept Game | TASG" />
+  <meta property="og:description" content="Play TASG’s optional browser-based SNARE drone intercept training game." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tasgdefense.com/game" />
+  <meta property="og:image" content="https://tasgdefense.com/tasg-social-card.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SNARE Drone Intercept Game | TASG" />
+  <meta name="twitter:description" content="Play TASG’s optional browser-based SNARE drone intercept training game." />
+  <meta name="twitter:image" content="https://tasgdefense.com/tasg-social-card.jpg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="/tasg-site-v4.css?v=4.7" />
+  <script src="/tasg-site-v4.js?v=4.7" defer></script>
+  <title>SNARE Drone Intercept Game | TASG</title>
+
+</head>
+<body class="page-game">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="Terminal Applied Solutions Group home">
+      <img class="brand-mark" src="/icon-192.png" width="48" height="48" alt="" />
+      <span class="brand-copy"><strong>TASG</strong><span>Terminal Applied Solutions Group</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation"><a href="/snare-1a">SNARE-1A</a><a href="/about">About</a><a href="/partner">Partner</a></nav>
+    <a class="button button-secondary header-cta" href="/partner">Partner inquiry</a>
+    <button class="menu-button" id="menuButton" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu"><span aria-hidden="true"></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <nav class="mobile-nav" aria-label="Mobile navigation"><a href="/snare-1a">SNARE-1A</a><a href="/about">About</a><a href="/partner">Partner</a></nav>
+  <a class="button button-primary" href="/partner">Partner inquiry</a>
+</div>
+<main id="main-content">
+  <section class="page-hero compact-hero">
+    <div class="page-hero-inner">
+      <p class="eyebrow">Browser training game</p>
+      <h1>SNARE Drone Intercept Game</h1>
+      <p>An optional browser game inspired by the final-layer counter-small-UAS problem. It is entertainment and training-oriented visualization—not a validated model of SNARE-1A performance.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container game-shell">
+      <div class="card game-card">
+        <div class="game-stage-wrap"><canvas id="gameCanvas" width="960" height="540" aria-label="SNARE Drone Intercept Game"></canvas></div>
+        <div class="game-toolbar"><button class="button button-primary" id="gameStart" type="button">Start mission</button><button class="button button-secondary" id="gamePause" type="button">Pause</button><button class="button button-secondary" id="gameReset" type="button">Reset</button></div>
+        <p class="game-help">Move the mouse or finger to aim, then click or tap to fire. Desktop users may also press <strong>Space</strong>. Press <strong>P</strong> to pause.</p>
+      </div>
+      <div class="game-sidebar">
+        <aside class="card sidebar-card"><p class="eyebrow">Mission status</p><div class="score-grid"><div class="score-box"><span>Score</span><strong id="scoreValue">0</strong></div><div class="score-box"><span>Wave</span><strong id="waveValue">1</strong></div><div class="score-box"><span>Health</span><strong id="healthValue">100</strong></div><div class="score-box"><span>Status</span><strong id="gameState">Ready</strong></div></div></aside>
+        <aside class="card sidebar-card"><p class="eyebrow">Top 10 leaderboard</p><div class="leaderboard" id="leaderboard"></div></aside>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-brand">
+      <picture><source srcset="/tasg-wordmark.webp" type="image/webp" /><img src="/tasg-wordmark.png" width="220" height="75" loading="lazy" alt="Terminal Applied Solutions Group" /></picture>
+      <p>Operator-led and combat-experienced defense innovation focused on disciplined concepts, protected intellectual property, and partner transition.</p>
+    </div>
+    <div class="footer-column">
+      <h2>Explore</h2>
+      <nav aria-label="Footer site navigation">
+        <a href="/snare-1a">SNARE-1A</a>
+        <a href="/about">About TASG</a>
+        <a href="/partner">Partner with TASG</a>
+        <a href="/game">SNARE Training Game</a>
+      </nav>
+    </div>
+    <div class="footer-column">
+      <h2>Company</h2>
+      <nav aria-label="Footer company navigation">
+        <a href="mailto:TerminalAppliedSolutionsGroup@proton.me">TerminalAppliedSolutionsGroup@proton.me</a>
+        <a href="/privacy">Privacy</a>
+      </nav>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-current-year></span> Terminal Applied Solutions Group, LLC</span>
+    <span>Independent company. No Department of Defense or U.S. Army endorsement. Do not submit classified, controlled, proprietary, or operationally sensitive information.</span>
+  </div>
+</footer>
+</body>
+</html>
