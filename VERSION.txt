@@ -1,5 +1,0 @@
-TASG website build: 2026-07-28-v4.6-Final-Interactive-QA
-Expected homepage title: TASG — Operator-Led Defense Innovation
-Expected homepage headline: Building the final layer of soldier survivability.
-SNARE-1A page includes the interactive Kharg Island-area concept demonstration.
-Critical visible assets are deployed at repository root.
