@@ -21,3 +21,4 @@ Upload every file in this folder directly to the GitHub repository root. There i
 2. Check `/`, `/snare-1a`, `/about`, `/partner`, `/privacy`, and `/game`.
 3. Test the mobile menu and partner form.
 4. Hard-refresh once if Cloudflare or the browser serves an older cached stylesheet.
+
