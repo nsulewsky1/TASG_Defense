@@ -1,0 +1,7 @@
+# Explicit pretty-URL fallbacks for Cloudflare Pages (also works if Pretty URLs is off)
+/terminal-link  /terminal-link.html  200
+/snare-1a       /snare-1a.html       200
+/about          /about.html          200
+/partner        /partner.html        200
+/privacy        /privacy.html        200
+/game           /game.html           200
