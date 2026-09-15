@@ -1,9 +1,7 @@
-TASG website build: 2026-09-15-v4.9-Executive-Voice
+TASG website build: 2026-09-15-v4.9.1-No-Game
 
-Primary changes:
-- Executive Terminal Link voice sitewide (capability first; local initiation as intentional control boundary)
-- Homepage, Terminal Link, About, Partner, SNARE, Privacy, Game, 404 cleaned for consistent posture
-- Contact: Nick@tasgdefense.com
-- SNARE parked / TRL 2 honesty retained
+- Removed SNARE training game page and all public links
+- Executive Terminal Link voice sitewide
+- SNARE parked / TRL 2 honesty
 - Selective consulting retained
-- Game footer-only + noindex
+- Contact: Nick@tasgdefense.com
