@@ -1,7 +1,5 @@
-TASG website build: 2026-09-15-v4.9.1-No-Game
+TASG website build: 2026-09-15-v4.9.2-Publish-Ready
 
-- Removed SNARE training game page and all public links
-- Executive Terminal Link voice sitewide
-- SNARE parked / TRL 2 honesty
-- Selective consulting retained
-- Contact: Nick@tasgdefense.com
+- Game page/JS/CSS removed
+- Executive Terminal Link sitewide
+- Contact Nick@tasgdefense.com

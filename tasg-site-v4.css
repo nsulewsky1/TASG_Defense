@@ -291,25 +291,6 @@ h1,h2,h3{line-height:1.04;letter-spacing:-.038em;font-weight:750}
 .not-found h1{margin-top:14px;font-size:clamp(3rem,6vw,5.5rem)}
 .not-found p:not(.eyebrow){max-width:650px;margin-top:18px;color:var(--soft)}
 
-.game-shell{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:22px;align-items:start}
-.game-card{padding:16px}
-.game-stage-wrap{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:#081018}
-.game-stage-wrap:before{content:"";position:absolute;inset:0;background:url('/topography.svg') center/cover;opacity:.13}
-.game-stage-wrap canvas{position:relative;z-index:1;display:block;width:100%;height:auto;aspect-ratio:16/9;touch-action:none}
-.game-toolbar{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
-.game-help{margin-top:12px;color:var(--muted);font-size:.9rem}
-.game-sidebar{display:grid;gap:16px}
-.sidebar-card{padding:20px}
-.score-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
-.score-box{padding:13px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.03)}
-.score-box span{display:block;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-.score-box strong{display:block;margin-top:6px;font-size:1.35rem}
-.leaderboard{display:grid;gap:8px;margin-top:14px}
-.leaderboard-item{display:grid;grid-template-columns:24px 1fr auto;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.03)}
-.leaderboard-rank{color:var(--sand);font-weight:800}
-.leaderboard-name{font-weight:700}
-.leaderboard-score{color:var(--soft)}
-
 .site-footer{padding:48px 0 30px;border-top:1px solid var(--line);background:rgba(0,0,0,.22)}
 .footer-main{display:grid;grid-template-columns:1.35fr .75fr .85fr;gap:32px;align-items:start}
 .footer-brand img{width:220px;filter:drop-shadow(0 8px 24px rgba(0,0,0,.35))}
@@ -331,14 +312,14 @@ html.js-reveal [data-reveal].is-visible{opacity:1;transform:none}
   .desktop-nav,.header-cta{display:none}
   .menu-button{display:block;justify-self:end}
   .header-inner{grid-template-columns:1fr auto}
-  .hero-grid,.split-layout,.founder-grid,.partner-grid,.game-shell,.cta-banner,.footer-main,.pipeline-grid{grid-template-columns:1fr}
+  .hero-grid,.split-layout,.founder-grid,.partner-grid,.cta-banner,.footer-main,.pipeline-grid{grid-template-columns:1fr}
   .hero-grid{gap:28px}
   .program-panel{max-width:760px}
   .process-grid,.partner-paths{grid-template-columns:repeat(2,minmax(0,1fr))}
   .process-grid article:last-child,.partner-paths article:last-child{grid-column:1/-1}
   .section-heading h2{max-width:18ch}
   .cta-banner .button{justify-self:start}
-  .game-sidebar{grid-template-columns:repeat(2,minmax(0,1fr))}
+  
   .pipeline-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 
@@ -350,14 +331,14 @@ html.js-reveal [data-reveal].is-visible{opacity:1;transform:none}
   .brand-copy span{font-size:.68rem;white-space:normal;max-width:190px}
   .hero{padding:56px 0}
   .hero-copy h1{max-width:none;font-size:clamp(2.7rem,13vw,4rem)}
-  .hero-actions,.form-actions,.game-toolbar{display:grid}
-  .hero-actions .button,.form-actions .button,.game-toolbar .button{width:100%}
+  .hero-actions,.form-actions,
+  .hero-actions .button,.form-actions .button .button{width:100%}
   .program-panel{padding:22px}
   .status-list div{grid-template-columns:1fr;gap:5px}
   .status-list dd{text-align:left}
   .section{padding:68px 0}
   .section.compact{padding:50px 0}
-  .fact-grid,.process-grid,.partner-paths,.maturity-grid,.maturity-track,.form-grid,.game-sidebar,.pipeline-grid{grid-template-columns:1fr}
+  .fact-grid,.process-grid,.partner-paths,.maturity-grid,.maturity-track,.form-grid,.pipeline-grid{grid-template-columns:1fr}
   .process-grid article:last-child,.partner-paths article:last-child{grid-column:auto}
   .maturity-track{overflow:visible;border:0;background:transparent;gap:10px}
   .track-step{border:1px solid rgba(17,21,27,.1)!important;border-radius:13px;background:rgba(255,255,255,.5)}
@@ -372,15 +353,15 @@ html.js-reveal [data-reveal].is-visible{opacity:1;transform:none}
   .cta-banner .button{width:100%}
   .footer-main{gap:28px}
   .footer-bottom{display:grid}
-  .game-card{padding:10px}
-  .score-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  
+  
 }
 
 @media(max-width:390px){
   .brand-copy span{max-width:154px;font-size:.64rem}
   .button{padding-inline:15px}
   .program-panel h2{font-size:2.2rem}
-  .score-grid{grid-template-columns:1fr 1fr}
+  
 }
 
 @media(prefers-reduced-motion:reduce){
