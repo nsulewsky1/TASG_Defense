@@ -1,4 +1,4 @@
-TASG website build: 2026-09-15-v4.8-Terminal-Link-First
+TASG website build: 2026-09-15-v4.8.1-Terminal-Link-First
 
 Primary changes:
 - Terminal Link elevated to primary product focus across homepage, nav, and OG/meta

@@ -43,6 +43,7 @@ document.querySelectorAll("[data-reveal]").forEach((el) => {
     el.classList.add("is-visible");
     return;
   }
+  document.documentElement.classList.add("js-reveal");
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -50,7 +51,7 @@ document.querySelectorAll("[data-reveal]").forEach((el) => {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+  }, { threshold: 0.08, rootMargin: "0px 0px -4% 0px" });
   observer.observe(el);
 });
 
