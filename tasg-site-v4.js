@@ -1,5 +1,5 @@
 
-const CONTACT_EMAIL = "TerminalAppliedSolutionsGroup@proton.me";
+const CONTACT_EMAIL = "Nick@tasgdefense.com";
 
 const header = document.getElementById("siteHeader");
 const menuButton = document.getElementById("menuButton");
@@ -36,6 +36,24 @@ if (menuButton && mobileMenu) {
 document.querySelectorAll("[data-current-year]").forEach((el) => {
   el.textContent = String(new Date().getFullYear());
 });
+
+
+document.querySelectorAll("[data-reveal]").forEach((el) => {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    el.classList.add("is-visible");
+    return;
+  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+  observer.observe(el);
+});
+
 
 document.querySelectorAll("[data-copy-email]").forEach((button) => {
   button.addEventListener("click", async () => {

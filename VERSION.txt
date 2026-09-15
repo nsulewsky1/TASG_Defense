@@ -1,11 +1,11 @@
-TASG website build: 2026-07-30-v4.7-Lean-Responsive-QA
+TASG website build: 2026-09-15-v4.8-Terminal-Link-First
 
 Primary changes:
-- Mobile header always displays Terminal Applied Solutions Group
-- Interactive tactical concept removed
-- Simulator removed from primary navigation and retained in footer
-- SNARE acronym and company-assessed TRL 2 posture clarified
-- About page uses Operator-led and combat-experienced positioning
-- Founder bio shortened and separated from official duties
-- SBA VetCert icon intentionally withheld pending approval
-- Responsive layouts optimized for phone, tablet, Windows, and macOS browsers
+- Terminal Link elevated to primary product focus across homepage, nav, and OG/meta
+- New public-safe /terminal-link page (employment bridge; no digital arm/fire)
+- SNARE-1A parked with explicit notional / not-validated / not-fielded banner; TRL 2 honesty retained
+- Selective consulting offer added (kit ergonomics + digital-layer / TAK; limited bandwidth)
+- Contact email standardized to Nick@tasgdefense.com
+- Softened blanket “protected intellectual property” claims; DoD/Army non-representation kept
+- Visual upgrade: premium glass/outline surfaces, sharper hero, refined typography, subtle motion with reduced-motion respect
+- Training game remains footer-only and noindex
