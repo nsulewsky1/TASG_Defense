@@ -1,5 +1,5 @@
-TASG website build: 2026-09-15-v4.9.2-Publish-Ready
+TASG website build: 2026-09-15-v4.9.3-CsUAS-Links-Fix
 
-- Game page/JS/CSS removed
-- Executive Terminal Link sitewide
-- Contact Nick@tasgdefense.com
+- Removed _redirects (fixed Cloudflare 308 redirect loop on all subpages)
+- Added explicit counter-small-UAS / C-sUAS language for Terminal Link
+- Game remains removed
