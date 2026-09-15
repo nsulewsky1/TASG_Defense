@@ -1,11 +1,9 @@
-TASG website build: 2026-09-15-v4.8.2-Terminal-Link-First
+TASG website build: 2026-09-15-v4.9-Executive-Voice
 
 Primary changes:
-- Terminal Link elevated to primary product focus across homepage, nav, and OG/meta
-- New public-safe /terminal-link page (employment bridge; no digital arm/fire)
-- SNARE-1A parked with explicit notional / not-validated / not-fielded banner; TRL 2 honesty retained
-- Selective consulting offer added (kit ergonomics + digital-layer / TAK; limited bandwidth)
-- Contact email standardized to Nick@tasgdefense.com
-- Softened blanket “protected intellectual property” claims; DoD/Army non-representation kept
-- Visual upgrade: premium glass/outline surfaces, sharper hero, refined typography, subtle motion with reduced-motion respect
-- Training game remains footer-only and noindex
+- Executive Terminal Link voice sitewide (capability first; local initiation as intentional control boundary)
+- Homepage, Terminal Link, About, Partner, SNARE, Privacy, Game, 404 cleaned for consistent posture
+- Contact: Nick@tasgdefense.com
+- SNARE parked / TRL 2 honesty retained
+- Selective consulting retained
+- Game footer-only + noindex

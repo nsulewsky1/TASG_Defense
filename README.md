@@ -1,28 +1,22 @@
-# TASG v4.8 Terminal Link First
+# TASG Defense website (v4.9)
 
-Upload every file in this folder directly to the GitHub repository root. There is no assets folder.
-
-## Deployment
-- Replace the existing root files with these v4.8 versions.
-- Keep all images, CSS, JavaScript, and HTML files beside `index.html`.
-- Cloudflare Pages framework preset: None.
-- Build command: blank.
-- Output directory: repository root.
-- Production branch: `main`.
+Static site for [tasgdefense.com](https://tasgdefense.com). Upload root files to GitHub; Cloudflare Pages serves from repository root.
 
 ## Public posture
-- Terminal Link is the primary product focus.
-- SNARE-1A is parked as a company-assessed TRL 2 notional packaging study (not validated, not fielded).
-- Selective consulting is offered with limited-bandwidth language—not full-time vendor capacity.
-- The SNARE training game remains available only through the footer and is marked `noindex`.
-- Contact: Nick@tasgdefense.com
-- Do not add the general SBA seal. After VetCert approval, use only the official certification web icon supplied by SBA.
-- Do not publish command endorsements, legal-review memoranda, military seals, unit information, official photographs, or nonpublic government information.
-- Do not claim ATO, STIG, FIPS, MIL-STD certification, or DoD/Army representation.
+- **Terminal Link** is the primary product (TAK employment integration; local initiation authority).
+- **Selective consulting** for kit ergonomics and digital-layer / TAK integration.
+- **SNARE-1A** is a parked TRL 2 notional packaging study (not validated; not fielded).
+- Training game is footer-only and `noindex`.
+- Contact: `Nick@tasgdefense.com`
+- Does not represent DoD or the U.S. Army.
 
-## Production verification
-1. Open `/VERSION.txt` and confirm `2026-09-15-v4.8-Terminal-Link-First`.
-2. Check `/`, `/terminal-link`, `/snare-1a`, `/about`, `/partner`, `/privacy`, and `/game`.
-3. Confirm primary nav lists Terminal Link first; game is footer-only.
-4. Test the mobile menu and partner form (includes Consulting category).
-5. Hard-refresh once if Cloudflare or the browser serves an older cached stylesheet.
+## Deployment
+- Cloudflare Pages: framework preset None, blank build command, output = repository root.
+- Production branch: `main`.
+- Pretty URLs: Cloudflare Pages + `_redirects` for extensionless routes.
+- Local preview: `python3 serve-preview.py` then open http://127.0.0.1:8080/
+
+## Verify
+1. Confirm `/VERSION.txt` shows `v4.9`.
+2. Check `/`, `/terminal-link`, `/about`, `/partner`, `/snare-1a`, `/privacy`, `/game`.
+3. Hard-refresh if CSS/JS appears stale (`?v=4.9`).
