@@ -17,5 +17,5 @@ Static site for [tasgdefense.com](https://tasgdefense.com). Upload root files to
 
 ## Verify
 1. Confirm `/VERSION.txt` shows `v4.9.1`.
-2. Check `/`, `/terminal-link`, `/about`, `/partner`, `/snare-1a`, `/privacy`, `/game`.
+2. Check `/`, `/terminal-link`, `/about`, `/partner`, `/snare-1a`, `/privacy`.
 3. Hard-refresh if CSS/JS appears stale (`?v=4.9`).
