@@ -1,5 +1,5 @@
-TASG website build: 2026-09-15-v4.9.3-CsUAS-Links-Fix
+2026-09-18-v4.15.1-copy
 
-- Removed _redirects (fixed Cloudflare 308 redirect loop on all subpages)
-- Added explicit counter-small-UAS / C-sUAS language for Terminal Link
-- Game remains removed
+- Drop corny Terminal Link first / consulting lines
+- SNARE: soldier-carried net effector; final-layer in layered defense
+- No Worn; no electronics details on public pages

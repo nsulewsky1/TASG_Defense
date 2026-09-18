@@ -78,7 +78,7 @@ if (inquiryForm) {
     const data = new FormData(inquiryForm);
     const category = String(data.get("category") || "General Inquiry");
     const organization = String(data.get("organization") || "Independent");
-    const subject = `TASG ${category} Inquiry — ${organization}`;
+    const subject = `TASG ${category} Inquiry - ${organization}`;
     const body = [
       `Engagement category: ${category}`,
       `Name: ${data.get("name") || ""}`,
