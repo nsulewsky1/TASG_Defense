@@ -1,5 +1,5 @@
-2026-09-18-v4.15.1-copy
+2026-09-18-v4.16.0-audit
 
-- Drop corny Terminal Link first / consulting lines
-- SNARE: soldier-carried net effector; final-layer in layered defense
-- No Worn; no electronics details on public pages
+- Audit fixes: OG tags, softened delivery, TL status box, partner form privacy
+- Restore about.html; nav Terminal Link | About | Partner
+- Sitemap + JSON-LD; reveal fail-safe; honest Evidence stub

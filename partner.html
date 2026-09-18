@@ -21,8 +21,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" href="/tasg-site-v4.css?v=4.15.1-copy" />
-  <script src="/tasg-site-v4.js?v=4.15.1-copy" defer></script>
+  <link rel="stylesheet" href="/tasg-site-v4.css?v=4.16.0-audit" />
+  <script src="/tasg-site-v4.js?v=4.16.0-audit" defer></script>
   <title>Partner with TASG</title>
 </head>
 <body class="page-partner">
@@ -35,6 +35,7 @@
     </a>
     <nav class="desktop-nav" aria-label="Primary navigation">
       <a href="/terminal-link">Terminal Link</a>
+      <a href="/about">About</a>
       <a href="/partner" aria-current="page">Partner</a>
     </nav>
     <a class="button button-secondary header-cta" href="/partner">Partner inquiry</a>
@@ -44,6 +45,7 @@
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <nav class="mobile-nav" aria-label="Mobile navigation">
     <a href="/terminal-link">Terminal Link</a>
+    <a href="/about">About</a>
     <a href="/partner" aria-current="page">Partner</a>
   </nav>
   <a class="button button-primary" href="/partner">Partner inquiry</a>
@@ -53,7 +55,7 @@
     <div class="page-hero-inner">
       <p class="eyebrow">Partner</p>
       <h1>Partner on Terminal Link.</h1>
-      <p>Tell us who you are and what you want. Keep the first note nonproprietary.</p>
+      <p>Tell us about your organization, relevant capability, and proposed engagement. Keep the first note nonproprietary.</p>
     </div>
   </section>
 
@@ -63,17 +65,17 @@
         <article class="card partner-card">
           <span>01</span>
           <h2>Terminal Link</h2>
-          <p>OEM and prime talks on C-sUAS employment reporting into TAK. CIV TAK demos. Assign-and-walk software plus docs.</p>
+          <p>OEM and prime talks on C-sUAS employment reporting into TAK. Preferred delivery model: transfer-ready source, interface documentation, test evidence, and limited transition support.</p>
         </article>
         <article class="card partner-card">
           <span>02</span>
           <h2>Scoped advisory</h2>
-          <p>Kit ergonomics or TAK employment integration when capacity allows. Not full-time vendor capacity.</p>
+          <p>Scoped advisory and integration support for kit ergonomics, adapter design, and TAK employment reporting.</p>
         </article>
         <article class="card partner-card">
           <span>03</span>
           <h2>Other pathways</h2>
-          <p>Engineering, funding, manufacturing, or SNARE co-development when the fit is clear and protected properly.</p>
+          <p>Engineering, funding, manufacturing, or SNARE co-development when protected properly.</p>
         </article>
       </div>
     </div>
@@ -84,7 +86,7 @@
       <div class="form-intro" data-reveal>
         <p class="eyebrow">Public-safe inquiry</p>
         <h2>Start without sending protected information.</h2>
-        <p>The form prepares an email in your mail app. Nothing is posted to a TASG web server. Choose Consulting for scoped advisory or integration support.</p>
+        <p>The prepare button builds an email in your mail app. Nothing is posted to a TASG web server. If scripting is unavailable, use the direct email link below. Do not put message content in a page URL.</p>
         <div class="direct-contact">
           <span>Direct email</span>
           <a href="mailto:Nick@tasgdefense.com">Nick@tasgdefense.com</a>
@@ -102,7 +104,7 @@
               <option>Grant and Non-Dilutive Funding</option>
               <option>Manufacturing and Transition</option>
               <option>Strategic Investment or Acquisition</option>
-              <option>Mission Organization Inquiry</option>
+              <option>Government or Mission User Inquiry</option>
               <option>General Inquiry</option>
             </select>
           </div>
@@ -119,12 +121,18 @@
             <label for="safe-message">I confirm this inquiry contains no classified, export-controlled, proprietary, procurement-sensitive, or operationally sensitive information.</label>
           </div>
           <div class="form-actions">
-            <button class="button button-primary" type="submit">Prepare email</button>
+            <button class="button button-primary" type="button" id="prepareEmail">Prepare email</button>
             <button class="button button-dark" type="button" data-copy-email aria-describedby="formStatus">Copy TASG email</button>
           </div>
           <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="form-fallback" id="formFallback" hidden>Unable to prepare a message automatically. Email <a href="mailto:Nick@tasgdefense.com">Nick@tasgdefense.com</a> directly. Do not put inquiry text in a page URL.</p>
         </div>
       </form>
+      <noscript>
+        <div class="card inquiry-form noscript-fallback">
+          <p><strong>Email TASG directly.</strong> Scripting is required to prepare a composed message. Use <a href="mailto:Nick@tasgdefense.com">Nick@tasgdefense.com</a>. Do not submit inquiry text through a page URL.</p>
+        </div>
+      </noscript>
     </div>
   </section>
 
@@ -132,7 +140,7 @@
     <div class="container narrow-stack">
       <div class="disclosure-box">
         <strong>Before deeper disclosure</strong>
-        <p>Technical detail follows fit, legal protection, and a real role in the path. Do not send classified, controlled, export-restricted, procurement-sensitive, or proprietary information through the public form. TASG does not represent DoD or the U.S. Army.</p>
+        <p>Technical detail follows fit, legal protection, and a real role in the path. Do not send classified, controlled, export-restricted, procurement-sensitive, or proprietary information through the public form. Government or Mission User Inquiry is for careful public-safe contact only. TASG does not represent DoD or the U.S. Army.</p>
       </div>
     </div>
   </section>
@@ -144,12 +152,13 @@
         <source srcset="/tasg-wordmark.webp" type="image/webp" />
         <img src="/tasg-wordmark.png" width="200" height="68" loading="lazy" alt="Terminal Applied Solutions Group" />
       </picture>
-      <p>Independent company. Terminal Link is the lead product.</p>
+      <p>Operator-led defense technology for the tactical edge.</p>
     </div>
     <div class="footer-column">
       <h2>Explore</h2>
       <nav aria-label="Footer site navigation">
         <a href="/terminal-link">Terminal Link</a>
+        <a href="/about">About</a>
         <a href="/partner">Partner</a>
         <a href="/snare-1a">SNARE-1A (study)</a>
       </nav>
@@ -163,8 +172,7 @@
     </div>
   </div>
   <div class="container footer-bottom">
-    <span>&copy; <span data-current-year></span> Terminal Applied Solutions Group, LLC</span>
-    <span>Does not represent DoD or the U.S. Army. No government endorsement claimed. Do not submit classified, controlled, proprietary, or operationally sensitive information.</span>
+    <span>&copy; 2026 Terminal Applied Solutions Group, LLC. Independently owned and operated. No U.S. government or military endorsement implied. Do not submit classified, controlled, proprietary, or operationally sensitive information.</span>
   </div>
 </footer>
 </body>

@@ -37,24 +37,29 @@ document.querySelectorAll("[data-current-year]").forEach((el) => {
   el.textContent = String(new Date().getFullYear());
 });
 
-
-document.querySelectorAll("[data-reveal]").forEach((el) => {
+const revealNodes = document.querySelectorAll("[data-reveal]");
+if (revealNodes.length) {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    el.classList.add("is-visible");
-    return;
+    revealNodes.forEach((el) => el.classList.add("is-visible"));
+  } else {
+    document.documentElement.classList.add("js-reveal");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: "0px 0px -4% 0px" });
+    revealNodes.forEach((el) => observer.observe(el));
+    // Fail-safe: never leave content invisible if scroll/IO fails
+    window.setTimeout(() => {
+      document.querySelectorAll("[data-reveal]:not(.is-visible)").forEach((el) => {
+        el.classList.add("is-visible");
+      });
+    }, 2500);
   }
-  document.documentElement.classList.add("js-reveal");
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.08, rootMargin: "0px 0px -4% 0px" });
-  observer.observe(el);
-});
-
+}
 
 document.querySelectorAll("[data-copy-email]").forEach((button) => {
   button.addEventListener("click", async () => {
@@ -70,29 +75,53 @@ document.querySelectorAll("[data-copy-email]").forEach((button) => {
 });
 
 const inquiryForm = document.getElementById("inquiryForm");
+const prepareEmail = document.getElementById("prepareEmail");
+const formStatus = document.getElementById("formStatus");
+const formFallback = document.getElementById("formFallback");
+
+function showDirectMailtoFallback(message) {
+  if (formStatus) formStatus.textContent = message || "Use the direct email link instead.";
+  if (formFallback) formFallback.hidden = false;
+}
+
 if (inquiryForm) {
-  const formStatus = document.getElementById("formStatus");
+  // Never allow native GET submission (query-string dump of message fields)
+  inquiryForm.setAttribute("action", "");
+  inquiryForm.removeAttribute("method");
   inquiryForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    if (!inquiryForm.reportValidity()) return;
-    const data = new FormData(inquiryForm);
-    const category = String(data.get("category") || "General Inquiry");
-    const organization = String(data.get("organization") || "Independent");
-    const subject = `TASG ${category} Inquiry - ${organization}`;
-    const body = [
-      `Engagement category: ${category}`,
-      `Name: ${data.get("name") || ""}`,
-      `Organization: ${organization}`,
-      `Role / title: ${data.get("role") || ""}`,
-      `Work email: ${data.get("email") || ""}`,
-      "",
-      "Nonproprietary message:",
-      String(data.get("message") || ""),
-      "",
-      "The sender acknowledged that this initial inquiry contains no classified, export-controlled, proprietary, procurement-sensitive, or operationally sensitive information."
-    ].join("\n");
-    const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    if (formStatus) formStatus.textContent = "Opening your email application with a prepared message.";
-    window.location.href = mailto;
+    event.stopPropagation();
+    return false;
   });
+}
+
+if (inquiryForm && prepareEmail) {
+  prepareEmail.addEventListener("click", () => {
+    try {
+      if (!inquiryForm.reportValidity()) return;
+      const data = new FormData(inquiryForm);
+      const category = String(data.get("category") || "General Inquiry");
+      const organization = String(data.get("organization") || "Independent");
+      const subject = `TASG ${category} Inquiry - ${organization}`;
+      const body = [
+        `Engagement category: ${category}`,
+        `Name: ${data.get("name") || ""}`,
+        `Organization: ${organization}`,
+        `Role / title: ${data.get("role") || ""}`,
+        `Work email: ${data.get("email") || ""}`,
+        "",
+        "Nonproprietary message:",
+        String(data.get("message") || ""),
+        "",
+        "The sender acknowledged that this initial inquiry contains no classified, export-controlled, proprietary, procurement-sensitive, or operationally sensitive information."
+      ].join("\n");
+      const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      if (formStatus) formStatus.textContent = "Opening your email application with a prepared message.";
+      window.location.href = mailto;
+    } catch {
+      showDirectMailtoFallback("Could not prepare the email automatically.");
+    }
+  });
+} else if (inquiryForm) {
+  showDirectMailtoFallback("Prepare email is unavailable.");
 }

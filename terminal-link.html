@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="description" content="Terminal Link reports final-layer counter-small-UAS employment into TAK while keeping initiation local to the operator." />
+  <meta name="description" content="Terminal Link captures an operator-initiated employment event and reports who, where, and when to TAK. Local initiation. Adapter-based integration." />
   <meta name="theme-color" content="#05080c" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://tasgdefense.com/terminal-link" />
   <meta property="og:title" content="Terminal Link | C-sUAS Employment to TAK | TASG" />
-  <meta property="og:description" content="Terminal Link reports final-layer counter-small-UAS employment into TAK while keeping initiation local to the operator." />
+  <meta property="og:description" content="Terminal Link captures an operator-initiated employment event and reports who, where, and when to TAK. Local initiation. Adapter-based integration." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tasgdefense.com/terminal-link" />
   <meta property="og:image" content="https://tasgdefense.com/tasg-social-card.jpg" />
@@ -16,14 +16,37 @@
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Terminal Link | C-sUAS Employment to TAK | TASG" />
-  <meta name="twitter:description" content="Terminal Link reports final-layer counter-small-UAS employment into TAK while keeping initiation local to the operator." />
+  <meta name="twitter:description" content="Terminal Link captures an operator-initiated employment event and reports who, where, and when to TAK. Local initiation. Adapter-based integration." />
   <meta name="twitter:image" content="https://tasgdefense.com/tasg-social-card.jpg" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" href="/tasg-site-v4.css?v=4.15.1-copy" />
-  <script src="/tasg-site-v4.js?v=4.15.1-copy" defer></script>
+  <link rel="stylesheet" href="/tasg-site-v4.css?v=4.16.0-audit" />
+  <script src="/tasg-site-v4.js?v=4.16.0-audit" defer></script>
   <title>Terminal Link | C-sUAS Employment to TAK | TASG</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["SoftwareApplication", "Product"],
+    "name": "Terminal Link",
+    "url": "https://tasgdefense.com/terminal-link",
+    "image": "https://tasgdefense.com/tasg-social-card.jpg",
+    "description": "Terminal Link captures an operator-initiated employment event and reports who, where, and when to TAK. Built for handheld and pouch-carried C-sUAS effectors while keeping initiation local.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Android (ATAK-CIV path)",
+    "brand": {
+      "@type": "Organization",
+      "name": "Terminal Applied Solutions Group, LLC",
+      "url": "https://tasgdefense.com/"
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/PreOrder",
+      "priceCurrency": "USD",
+      "description": "Preferred delivery model: transfer-ready source, interface documentation, test evidence, and limited transition support."
+    }
+  }
+  </script>
 </head>
 <body class="page-terminal-link">
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -35,6 +58,7 @@
     </a>
     <nav class="desktop-nav" aria-label="Primary navigation">
       <a href="/terminal-link" aria-current="page">Terminal Link</a>
+      <a href="/about">About</a>
       <a href="/partner">Partner</a>
     </nav>
     <a class="button button-secondary header-cta" href="/partner">Partner inquiry</a>
@@ -44,6 +68,7 @@
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <nav class="mobile-nav" aria-label="Mobile navigation">
     <a href="/terminal-link" aria-current="page">Terminal Link</a>
+    <a href="/about">About</a>
     <a href="/partner">Partner</a>
   </nav>
   <a class="button button-primary" href="/partner">Partner inquiry</a>
@@ -52,15 +77,25 @@
   <section class="page-hero">
     <div class="page-hero-inner">
       <p class="eyebrow">Product · Terminal Link</p>
-      <h1>Terminal Link turns employment into battlefield awareness.</h1>
+      <h1>Turn individual effector employment into a shared TAK event.</h1>
       <p class="hero-subtitle">Final-layer C-sUAS employment reporting into TAK</p>
-      <p>Reports an individual counter-small-UAS employment onto the common TAK picture. The operator initiates at the device. Terminal Link reports the event. It does not fire the effector.</p>
-      <p class="tl-agnostic-lead">Hardware and device agnostic by design through an adapter contract for final-layer C-sUAS effectors. Architectural fit, not certification on every device.</p>
+      <p>Terminal Link captures an operator-initiated employment event and reports who, where, and when to TAK. It starts with handheld and pouch-carried C-sUAS effectors while keeping initiation local. It does not fire the effector.</p>
       <div class="meta-row">
-        <span>C-sUAS focused</span>
+        <span>C-sUAS lead use case</span>
         <span>Local initiation</span>
-        <span class="meta-accent">Device-agnostic by design</span>
-        <span>Holds under RF OFF</span>
+        <span class="meta-accent">Adapter-based integration</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow-stack" data-reveal>
+      <div class="status-box card surface-outline" role="status">
+        <dl class="status-list">
+          <div><dt>Current status</dt><dd>Prototype under verification</dd></div>
+          <div><dt>Next evidence gate</dt><dd>On-device ATAK-CIV load, BLE hardware event capture, and end-to-end Cursor on Target publication.</dd></div>
+          <div><dt>Not currently claimed</dt><dd>Fielded deployment, ATO, STIG, FIPS, MIL-STD compliance, or certification across every device.</dd></div>
+        </dl>
       </div>
     </div>
   </section>
@@ -81,7 +116,7 @@
         <article class="systems-step card surface-outline">
           <span class="systems-chip">02</span>
           <strong>Adapter / report</strong>
-          <p>Employment signal checked locally, recorded on-device, structured for the common picture. Holds under RF OFF.</p>
+          <p>Employment signal checked locally, recorded on-device, structured for the common picture.</p>
         </article>
         <article class="systems-step card surface-outline">
           <span class="systems-chip">03</span>
@@ -113,8 +148,13 @@
     <div class="container narrow-stack" data-reveal>
       <div class="content-block">
         <p class="eyebrow">Delivery</p>
-        <h2>Software and docs partners can take and integrate.</h2>
-        <p>Preferred model: assign-and-walk software plus documentation. Not an always-on ops vendor. A CIV TAK demonstration path supports public-safe evaluation talks.</p>
+        <h2>Honest prototype posture.</h2>
+        <p>Preferred delivery model: transfer-ready source, interface documentation, test evidence, and limited transition support.</p>
+      </div>
+      <div class="content-block">
+        <p class="eyebrow">Evidence</p>
+        <h2>Public-safe demo visuals deferred.</h2>
+        <p>Public-safe demo visuals will publish after the next evidence gate. No fabricated ATAK screenshots or demo captures are shown on this page.</p>
       </div>
       <div class="disclosure-box">
         <strong>Honest limits</strong>
@@ -128,8 +168,8 @@
       <div class="cta-banner card" data-reveal>
         <div>
           <p class="eyebrow">Next step</p>
-          <h2>Integrate, demo, or start a partner inquiry.</h2>
-          <p>OEM and prime conversations welcome when fit is clear and the inquiry stays nonproprietary.</p>
+          <h2>Integrate, evaluate, or start a partner inquiry.</h2>
+          <p>OEM and prime conversations welcome when the inquiry stays nonproprietary.</p>
         </div>
         <a class="button button-primary" href="/partner">Partner inquiry</a>
       </div>
@@ -143,12 +183,13 @@
         <source srcset="/tasg-wordmark.webp" type="image/webp" />
         <img src="/tasg-wordmark.png" width="200" height="68" loading="lazy" alt="Terminal Applied Solutions Group" />
       </picture>
-      <p>Independent company. Terminal Link is the lead product.</p>
+      <p>Operator-led defense technology for the tactical edge.</p>
     </div>
     <div class="footer-column">
       <h2>Explore</h2>
       <nav aria-label="Footer site navigation">
         <a href="/terminal-link">Terminal Link</a>
+        <a href="/about">About</a>
         <a href="/partner">Partner</a>
         <a href="/snare-1a">SNARE-1A (study)</a>
       </nav>
@@ -162,8 +203,7 @@
     </div>
   </div>
   <div class="container footer-bottom">
-    <span>&copy; <span data-current-year></span> Terminal Applied Solutions Group, LLC</span>
-    <span>Does not represent DoD or the U.S. Army. No government endorsement claimed. Do not submit classified, controlled, proprietary, or operationally sensitive information.</span>
+    <span>&copy; 2026 Terminal Applied Solutions Group, LLC. Independently owned and operated. No U.S. government or military endorsement implied. Do not submit classified, controlled, proprietary, or operationally sensitive information.</span>
   </div>
 </footer>
 </body>

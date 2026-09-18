@@ -13,6 +13,12 @@
 /tasg-social-card.jpg
   Cache-Control: public, max-age=31536000, immutable
 
+/og-snare-1a.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+/og-terminal-link.png
+  Cache-Control: public, max-age=31536000, immutable
+
 /topography.svg
   Cache-Control: public, max-age=31536000, immutable
 
