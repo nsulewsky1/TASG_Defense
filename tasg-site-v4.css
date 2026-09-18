@@ -1382,3 +1382,18 @@ html.js-reveal [data-reveal].is-visible {
   }
   [data-reveal] { opacity: 1; transform: none; }
 }
+
+
+/* Compact development status panel */
+.status-panel {
+  padding: 1.25rem 1.5rem;
+  max-width: 52rem;
+}
+.status-panel h2 {
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  margin: 0.35rem 0 0.55rem;
+}
+.status-panel p {
+  margin: 0;
+  max-width: 48rem;
+}

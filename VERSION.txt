@@ -1,5 +1,5 @@
-2026-09-18-v4.16.0-audit
+2026-09-18-v4.16.1-polish
 
-- Audit fixes: OG tags, softened delivery, TL status box, partner form privacy
-- Restore about.html; nav Terminal Link | About | Partner
-- Sitemap + JSON-LD; reveal fail-safe; honest Evidence stub
+- OG renamed to og-terminal-link-v2.jpg (bypass Cloudflare immutable cache)
+- Compact development status panel; remove fabricated wording
+- Soften transfer-ready; employment / operator position language
